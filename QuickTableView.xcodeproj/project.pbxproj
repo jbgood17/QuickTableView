@@ -11,6 +11,7 @@
 		1279A4972401C3DE00C8AC09 /* QTVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279A4962401C3DE00C8AC09 /* QTVDataSource.swift */; };
 		1279A49A2401C43400C8AC09 /* QTVLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279A4992401C43400C8AC09 /* QTVLocalDataSource.swift */; };
 		1279A49C2401C49200C8AC09 /* QTVContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279A49B2401C49200C8AC09 /* QTVContainer.swift */; };
+		1279A4D82401D80900C8AC09 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 1279A4A02401C55300C8AC09 /* books.json */; };
 		12B69BA4236246C0000C32EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA3236246C0000C32EE /* AppDelegate.swift */; };
 		12B69BA6236246C0000C32EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA5236246C0000C32EE /* SceneDelegate.swift */; };
 		12B69BA8236246C0000C32EE /* QuickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA7236246C0000C32EE /* QuickTableViewController.swift */; };
@@ -19,7 +20,6 @@
 		12B69BB0236246C2000C32EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BAE236246C2000C32EE /* LaunchScreen.storyboard */; };
 		12B69BBB236246C2000C32EE /* QuickTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BBA236246C2000C32EE /* QuickTableViewTests.swift */; };
 		12B69BC6236246C2000C32EE /* QuickTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BC5236246C2000C32EE /* QuickTableViewUITests.swift */; };
-		12B69BD423624714000C32EE /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BD323624714000C32EE /* books.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		1279A4992401C43400C8AC09 /* QTVLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTVLocalDataSource.swift; sourceTree = "<group>"; };
 		1279A49B2401C49200C8AC09 /* QTVContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTVContainer.swift; sourceTree = "<group>"; };
 		1279A4A02401C55300C8AC09 /* books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
-		12B69BA0236246C0000C32EE /* Book List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12B69BA0236246C0000C32EE /* QuickTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B69BA3236246C0000C32EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12B69BA5236246C0000C32EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		12B69BA7236246C0000C32EE /* QuickTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTableViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +59,6 @@
 		12B69BC1236246C2000C32EE /* Book ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Book ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B69BC5236246C2000C32EE /* QuickTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTableViewUITests.swift; sourceTree = "<group>"; };
 		12B69BC7236246C2000C32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12B69BD323624714000C32EE /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = books.json; path = "../../../../Downloads/02a5a80b65e6433db45e373bce4110d0-bf893cc9a6091b03a6f9512e8e575a6aea2938b2/books.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +125,7 @@
 		12B69BA1236246C0000C32EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12B69BA0236246C0000C32EE /* Book List.app */,
+				12B69BA0236246C0000C32EE /* QuickTableView.app */,
 				12B69BB6236246C2000C32EE /* Book ListTests.xctest */,
 				12B69BC1236246C2000C32EE /* Book ListUITests.xctest */,
 			);
@@ -136,7 +135,6 @@
 		12B69BA2236246C0000C32EE /* QuickTableView */ = {
 			isa = PBXGroup;
 			children = (
-				12B69BD323624714000C32EE /* books.json */,
 				12B69BB1236246C2000C32EE /* Info.plist */,
 				12B69BA3236246C0000C32EE /* AppDelegate.swift */,
 				1279A4942401B69800C8AC09 /* QTCViewModel.swift */,
@@ -172,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12B69B9F236246C0000C32EE /* Book List */ = {
+		12B69B9F236246C0000C32EE /* QuickTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12B69BCA236246C2000C32EE /* Build configuration list for PBXNativeTarget "Book List" */;
+			buildConfigurationList = 12B69BCA236246C2000C32EE /* Build configuration list for PBXNativeTarget "QuickTableView" */;
 			buildPhases = (
 				12B69B9C236246C0000C32EE /* Sources */,
 				12B69B9D236246C0000C32EE /* Frameworks */,
@@ -184,9 +182,9 @@
 			);
 			dependencies = (
 			);
-			name = "Book List";
+			name = QuickTableView;
 			productName = "Book List";
-			productReference = 12B69BA0236246C0000C32EE /* Book List.app */;
+			productReference = 12B69BA0236246C0000C32EE /* QuickTableView.app */;
 			productType = "com.apple.product-type.application";
 		};
 		12B69BB5236246C2000C32EE /* Book ListTests */ = {
@@ -261,7 +259,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12B69B9F236246C0000C32EE /* Book List */,
+				12B69B9F236246C0000C32EE /* QuickTableView */,
 				12B69BB5236246C2000C32EE /* Book ListTests */,
 				12B69BC0236246C2000C32EE /* Book ListUITests */,
 			);
@@ -273,7 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B69BD423624714000C32EE /* books.json in Resources */,
+				1279A4D82401D80900C8AC09 /* books.json in Resources */,
 				12B69BB0236246C2000C32EE /* LaunchScreen.storyboard in Resources */,
 				12B69BAD236246C2000C32EE /* Assets.xcassets in Resources */,
 				12B69BAB236246C0000C32EE /* Main.storyboard in Resources */,
@@ -332,12 +330,12 @@
 /* Begin PBXTargetDependency section */
 		12B69BB8236246C2000C32EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 12B69B9F236246C0000C32EE /* Book List */;
+			target = 12B69B9F236246C0000C32EE /* QuickTableView */;
 			targetProxy = 12B69BB7236246C2000C32EE /* PBXContainerItemProxy */;
 		};
 		12B69BC3236246C2000C32EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 12B69B9F236246C0000C32EE /* Book List */;
+			target = 12B69B9F236246C0000C32EE /* QuickTableView */;
 			targetProxy = 12B69BC2236246C2000C32EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -530,7 +528,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Book List.app/Book List";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickTableView.app/QuickTableView";
 			};
 			name = Debug;
 		};
@@ -552,7 +550,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Book List.app/Book List";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickTableView.app/QuickTableView";
 			};
 			name = Release;
 		};
@@ -572,7 +570,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Book List";
+				TEST_TARGET_NAME = QuickTableView;
 			};
 			name = Debug;
 		};
@@ -592,7 +590,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Book List";
+				TEST_TARGET_NAME = QuickTableView;
 			};
 			name = Release;
 		};
@@ -608,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12B69BCA236246C2000C32EE /* Build configuration list for PBXNativeTarget "Book List" */ = {
+		12B69BCA236246C2000C32EE /* Build configuration list for PBXNativeTarget "QuickTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12B69BCB236246C2000C32EE /* Debug */,

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Book_List
+@testable import QuickTableView
 
 class QuickTableViewTests: XCTestCase {
 

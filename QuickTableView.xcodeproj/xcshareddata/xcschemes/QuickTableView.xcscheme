@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "12B69B9F236246C0000C32EE"
-               BuildableName = "Book List.app"
-               BlueprintName = "Book List"
+               BuildableName = "QuickTableView.app"
+               BlueprintName = "QuickTableView"
                ReferencedContainer = "container:QuickTableView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -65,8 +65,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "12B69B9F236246C0000C32EE"
-            BuildableName = "Book List.app"
-            BlueprintName = "Book List"
+            BuildableName = "QuickTableView.app"
+            BlueprintName = "QuickTableView"
             ReferencedContainer = "container:QuickTableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -82,8 +82,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "12B69B9F236246C0000C32EE"
-            BuildableName = "Book List.app"
-            BlueprintName = "Book List"
+            BuildableName = "QuickTableView.app"
+            BlueprintName = "QuickTableView"
             ReferencedContainer = "container:QuickTableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
