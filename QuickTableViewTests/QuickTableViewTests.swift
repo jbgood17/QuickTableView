@@ -1,5 +1,5 @@
 //
-//  Book_ListTests.swift
+//  QuickTableViewTests.swift
 //  Quick Table ViewTests
 //
 //  Created by John Cheney on 10/24/19.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Book_List
 
-class Book_ListTests: XCTestCase {
+class QuickTableViewTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

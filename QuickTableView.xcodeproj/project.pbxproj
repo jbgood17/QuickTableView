@@ -17,8 +17,8 @@
 		12B69BAB236246C0000C32EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BA9236246C0000C32EE /* Main.storyboard */; };
 		12B69BAD236246C2000C32EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BAC236246C2000C32EE /* Assets.xcassets */; };
 		12B69BB0236246C2000C32EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BAE236246C2000C32EE /* LaunchScreen.storyboard */; };
-		12B69BBB236246C2000C32EE /* Book_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BBA236246C2000C32EE /* Book_ListTests.swift */; };
-		12B69BC6236246C2000C32EE /* Book_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BC5236246C2000C32EE /* Book_ListUITests.swift */; };
+		12B69BBB236246C2000C32EE /* QuickTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BBA236246C2000C32EE /* QuickTableViewTests.swift */; };
+		12B69BC6236246C2000C32EE /* QuickTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BC5236246C2000C32EE /* QuickTableViewUITests.swift */; };
 		12B69BD423624714000C32EE /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BD323624714000C32EE /* books.json */; };
 /* End PBXBuildFile section */
 
@@ -54,10 +54,10 @@
 		12B69BAF236246C2000C32EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12B69BB1236246C2000C32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12B69BB6236246C2000C32EE /* Book ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Book ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		12B69BBA236246C2000C32EE /* Book_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_ListTests.swift; sourceTree = "<group>"; };
+		12B69BBA236246C2000C32EE /* QuickTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTableViewTests.swift; sourceTree = "<group>"; };
 		12B69BBC236246C2000C32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12B69BC1236246C2000C32EE /* Book ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Book ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		12B69BC5236246C2000C32EE /* Book_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_ListUITests.swift; sourceTree = "<group>"; };
+		12B69BC5236246C2000C32EE /* QuickTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTableViewUITests.swift; sourceTree = "<group>"; };
 		12B69BC7236246C2000C32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12B69BD323624714000C32EE /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = books.json; path = "../../../../Downloads/02a5a80b65e6433db45e373bce4110d0-bf893cc9a6091b03a6f9512e8e575a6aea2938b2/books.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,7 +154,7 @@
 		12B69BB9236246C2000C32EE /* QuickTableViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				12B69BBA236246C2000C32EE /* Book_ListTests.swift */,
+				12B69BBA236246C2000C32EE /* QuickTableViewTests.swift */,
 				12B69BBC236246C2000C32EE /* Info.plist */,
 			);
 			path = QuickTableViewTests;
@@ -163,7 +163,7 @@
 		12B69BC4236246C2000C32EE /* QuickTableViewUITests */ = {
 			isa = PBXGroup;
 			children = (
-				12B69BC5236246C2000C32EE /* Book_ListUITests.swift */,
+				12B69BC5236246C2000C32EE /* QuickTableViewUITests.swift */,
 				12B69BC7236246C2000C32EE /* Info.plist */,
 			);
 			path = QuickTableViewUITests;
@@ -315,7 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B69BBB236246C2000C32EE /* Book_ListTests.swift in Sources */,
+				12B69BBB236246C2000C32EE /* QuickTableViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B69BC6236246C2000C32EE /* Book_ListUITests.swift in Sources */,
+				12B69BC6236246C2000C32EE /* QuickTableViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
