@@ -116,9 +116,9 @@
 		12B69B97236246C0000C32EE = {
 			isa = PBXGroup;
 			children = (
-				12B69BA2236246C0000C32EE /* Book List */,
-				12B69BB9236246C2000C32EE /* Book ListTests */,
-				12B69BC4236246C2000C32EE /* Book ListUITests */,
+				12B69BA2236246C0000C32EE /* QuickTableView */,
+				12B69BB9236246C2000C32EE /* QuickTableViewTests */,
+				12B69BC4236246C2000C32EE /* QuickTableViewUITests */,
 				12B69BA1236246C0000C32EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		12B69BA2236246C0000C32EE /* Book List */ = {
+		12B69BA2236246C0000C32EE /* QuickTableView */ = {
 			isa = PBXGroup;
 			children = (
 				12B69BD323624714000C32EE /* books.json */,
@@ -148,25 +148,25 @@
 				12B69BA9236246C0000C32EE /* Main.storyboard */,
 				1279A4982401C41700C8AC09 /* QTVDataSource */,
 			);
-			path = "Book List";
+			path = QuickTableView;
 			sourceTree = "<group>";
 		};
-		12B69BB9236246C2000C32EE /* Book ListTests */ = {
+		12B69BB9236246C2000C32EE /* QuickTableViewTests */ = {
 			isa = PBXGroup;
 			children = (
 				12B69BBA236246C2000C32EE /* Book_ListTests.swift */,
 				12B69BBC236246C2000C32EE /* Info.plist */,
 			);
-			path = "Book ListTests";
+			path = QuickTableViewTests;
 			sourceTree = "<group>";
 		};
-		12B69BC4236246C2000C32EE /* Book ListUITests */ = {
+		12B69BC4236246C2000C32EE /* QuickTableViewUITests */ = {
 			isa = PBXGroup;
 			children = (
 				12B69BC5236246C2000C32EE /* Book_ListUITests.swift */,
 				12B69BC7236246C2000C32EE /* Info.plist */,
 			);
-			path = "Book ListUITests";
+			path = QuickTableViewUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 226VD46MFJ;
-				INFOPLIST_FILE = "Book List/Info.plist";
+				INFOPLIST_FILE = QuickTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 226VD46MFJ;
-				INFOPLIST_FILE = "Book List/Info.plist";
+				INFOPLIST_FILE = QuickTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,7 +519,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 226VD46MFJ;
-				INFOPLIST_FILE = "Book ListTests/Info.plist";
+				INFOPLIST_FILE = QuickTableViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,7 +541,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 226VD46MFJ;
-				INFOPLIST_FILE = "Book ListTests/Info.plist";
+				INFOPLIST_FILE = QuickTableViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -562,7 +562,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 226VD46MFJ;
-				INFOPLIST_FILE = "Book ListUITests/Info.plist";
+				INFOPLIST_FILE = QuickTableViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,7 +582,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 226VD46MFJ;
-				INFOPLIST_FILE = "Book ListUITests/Info.plist";
+				INFOPLIST_FILE = QuickTableViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
