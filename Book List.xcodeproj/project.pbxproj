@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		12B69BA4236246C0000C32EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA3236246C0000C32EE /* AppDelegate.swift */; };
 		12B69BA6236246C0000C32EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA5236246C0000C32EE /* SceneDelegate.swift */; };
-		12B69BA8236246C0000C32EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA7236246C0000C32EE /* ViewController.swift */; };
+		12B69BA8236246C0000C32EE /* QuickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA7236246C0000C32EE /* QuickTableViewController.swift */; };
 		12B69BAB236246C0000C32EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BA9236246C0000C32EE /* Main.storyboard */; };
 		12B69BAD236246C2000C32EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BAC236246C2000C32EE /* Assets.xcassets */; };
 		12B69BB0236246C2000C32EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BAE236246C2000C32EE /* LaunchScreen.storyboard */; };
 		12B69BBB236246C2000C32EE /* Book_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BBA236246C2000C32EE /* Book_ListTests.swift */; };
 		12B69BC6236246C2000C32EE /* Book_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BC5236246C2000C32EE /* Book_ListUITests.swift */; };
+		12B69BD423624714000C32EE /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 12B69BD323624714000C32EE /* books.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		12B69BA0236246C0000C32EE /* Book List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B69BA3236246C0000C32EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12B69BA5236246C0000C32EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12B69BA7236246C0000C32EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12B69BA7236246C0000C32EE /* QuickTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTableViewController.swift; sourceTree = "<group>"; };
 		12B69BAA236246C0000C32EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12B69BAC236246C2000C32EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B69BAF236246C2000C32EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		12B69BC1236246C2000C32EE /* Book ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Book ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B69BC5236246C2000C32EE /* Book_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_ListUITests.swift; sourceTree = "<group>"; };
 		12B69BC7236246C2000C32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12B69BD323624714000C32EE /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = books.json; path = "../../../../Downloads/02a5a80b65e6433db45e373bce4110d0-bf893cc9a6091b03a6f9512e8e575a6aea2938b2/books.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				12B69BA3236246C0000C32EE /* AppDelegate.swift */,
 				12B69BA5236246C0000C32EE /* SceneDelegate.swift */,
-				12B69BA7236246C0000C32EE /* ViewController.swift */,
+				12B69BA7236246C0000C32EE /* QuickTableViewController.swift */,
 				12B69BA9236246C0000C32EE /* Main.storyboard */,
 				12B69BAC236246C2000C32EE /* Assets.xcassets */,
 				12B69BAE236246C2000C32EE /* LaunchScreen.storyboard */,
 				12B69BB1236246C2000C32EE /* Info.plist */,
+				12B69BD323624714000C32EE /* books.json */,
 			);
 			path = "Book List";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B69BD423624714000C32EE /* books.json in Resources */,
 				12B69BB0236246C2000C32EE /* LaunchScreen.storyboard in Resources */,
 				12B69BAD236246C2000C32EE /* Assets.xcassets in Resources */,
 				12B69BAB236246C0000C32EE /* Main.storyboard in Resources */,
@@ -259,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B69BA8236246C0000C32EE /* ViewController.swift in Sources */,
+				12B69BA8236246C0000C32EE /* QuickTableViewController.swift in Sources */,
 				12B69BA4236246C0000C32EE /* AppDelegate.swift in Sources */,
 				12B69BA6236246C0000C32EE /* SceneDelegate.swift in Sources */,
 			);
