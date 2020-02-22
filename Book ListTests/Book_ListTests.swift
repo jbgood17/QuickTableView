@@ -1,6 +1,6 @@
 //
 //  Book_ListTests.swift
-//  Book ListTests
+//  Quick Table ViewTests
 //
 //  Created by John Cheney on 10/24/19.
 //  Copyright © 2019 John Cheney. All rights reserved.

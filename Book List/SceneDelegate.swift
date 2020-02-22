@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Book List
+//  Quick Table View
 //
 //  Created by John Cheney on 10/24/19.
 //  Copyright © 2019 John Cheney. All rights reserved.

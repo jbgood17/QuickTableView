@@ -1,6 +1,6 @@
 //
 //  QTVDataSource.swift
-//  Book List
+//  Quick Table View
 //
 //  Created by John Cheney on 2/22/20.
 //  Copyright © 2020 John Cheney. All rights reserved.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol QTVItem: Codable {
-	var title: String { get }
-	var subtitle: String { get }
+struct QTVItem: Codable {
+	var title: String
+	var subtitle: String
 }
 
 protocol QTVDataSource {

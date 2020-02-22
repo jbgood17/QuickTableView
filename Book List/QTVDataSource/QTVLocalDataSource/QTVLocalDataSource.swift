@@ -1,6 +1,6 @@
 //
 //  QTVLocalDataSource.swift
-//  Book List
+//  Quick Table View
 //
 //  Created by John Cheney on 2/22/20.
 //  Copyright © 2020 John Cheney. All rights reserved.
@@ -30,11 +30,11 @@ class QTVLocalDataSource: QTVDataSource {
 		if let url = localURL {
 			do {
 				let data = try Data(contentsOf: url, options: [])
-				let items = try JSONDecoder().decode([Book].self, from: data)
+				let items = try JSONDecoder().decode([QTVItem].self, from: data)
 				
 				completion(items)
 			} catch {
-					
+				
 			}
 		}
 	}
