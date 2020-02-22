@@ -8,71 +8,40 @@
 
 import UIKit
 
-struct Book: Codable {
-    var title: String
-    var subtitle: String
-}
+let QTCTableViewCellIdentifier = "QTCTableViewCellIdentifier"
 
 class QuickTableViewController: UIViewController, UITableViewDelegate {
+    	
+	@IBOutlet var tableView: UITableView!
+	
+	var viewModel: QTVViewModel!
     
-    let bookIdentifier = "bookIdentifier"
-    
-    var books = [Book]()
-    @IBOutlet var tableView: UITableView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        readFromBooksList { [weak self] (books) in
-            guard let strongSelf = self else { return }
-            
-            DispatchQueue.main.async {
-                strongSelf.books = books
-                strongSelf.tableView.reloadData()
-            }
-            
-        }
-    }
-        
-    func readFromBooksList(completion: @escaping ([Book]) -> ()) {
-        if let booksUrl = Bundle.main.url(forResource: "books", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: booksUrl, options: [])
-                let books = try JSONDecoder().decode([Book].self, from: data)
-                completion(books)
-            } catch {
-                
-            }
-        }
-    }
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		tableView.delegate = self
+		tableView.dataSource = self
+		
+		viewModel = QTVViewModel()
+			
+		viewModel.readFromBooksList { [weak self] (books) in
+			guard let strongSelf = self else { return }
+			
+			DispatchQueue.main.async {
+					strongSelf.tableView.reloadData()
+			}
+		}
+	}
     
 }
 
 extension QuickTableViewController: UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return books.count
+		return viewModel.tableView(tableView, numberOfRowsInSection: section)
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		guard indexPath.row < books.count else {
-				return UITableViewCell(style: .subtitle, reuseIdentifier: bookIdentifier)
-		}
-
-		let cell: UITableViewCell
-		if let dequeuedCell = tableView.dequeueReusableCell(withIdentifier: bookIdentifier) {
-				cell = dequeuedCell
-		} else {
-				cell = UITableViewCell(style: .subtitle, reuseIdentifier: bookIdentifier)
-		}
-
-		let book = books[indexPath.row]
-		cell.textLabel?.text = book.title
-		cell.detailTextLabel?.text = book.subtitle
-
-		return cell
+		return viewModel.tableView(tableView, cellForRowAt: indexPath)
 	}
 	
 }
