@@ -53,10 +53,10 @@
 		12B69BAC236246C2000C32EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B69BAF236246C2000C32EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12B69BB1236246C2000C32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12B69BB6236246C2000C32EE /* Book ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Book ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12B69BB6236246C2000C32EE /* QuickTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B69BBA236246C2000C32EE /* QuickTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTableViewTests.swift; sourceTree = "<group>"; };
 		12B69BBC236246C2000C32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12B69BC1236246C2000C32EE /* Book ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Book ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12B69BC1236246C2000C32EE /* QuickTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B69BC5236246C2000C32EE /* QuickTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTableViewUITests.swift; sourceTree = "<group>"; };
 		12B69BC7236246C2000C32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				12B69BA0236246C0000C32EE /* QuickTableView.app */,
-				12B69BB6236246C2000C32EE /* Book ListTests.xctest */,
-				12B69BC1236246C2000C32EE /* Book ListUITests.xctest */,
+				12B69BB6236246C2000C32EE /* QuickTableViewTests.xctest */,
+				12B69BC1236246C2000C32EE /* QuickTableViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,9 +187,9 @@
 			productReference = 12B69BA0236246C0000C32EE /* QuickTableView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		12B69BB5236246C2000C32EE /* Book ListTests */ = {
+		12B69BB5236246C2000C32EE /* QuickTableViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12B69BCD236246C2000C32EE /* Build configuration list for PBXNativeTarget "Book ListTests" */;
+			buildConfigurationList = 12B69BCD236246C2000C32EE /* Build configuration list for PBXNativeTarget "QuickTableViewTests" */;
 			buildPhases = (
 				12B69BB2236246C2000C32EE /* Sources */,
 				12B69BB3236246C2000C32EE /* Frameworks */,
@@ -200,14 +200,14 @@
 			dependencies = (
 				12B69BB8236246C2000C32EE /* PBXTargetDependency */,
 			);
-			name = "Book ListTests";
+			name = QuickTableViewTests;
 			productName = "Book ListTests";
-			productReference = 12B69BB6236246C2000C32EE /* Book ListTests.xctest */;
+			productReference = 12B69BB6236246C2000C32EE /* QuickTableViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		12B69BC0236246C2000C32EE /* Book ListUITests */ = {
+		12B69BC0236246C2000C32EE /* QuickTableViewUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12B69BD0236246C2000C32EE /* Build configuration list for PBXNativeTarget "Book ListUITests" */;
+			buildConfigurationList = 12B69BD0236246C2000C32EE /* Build configuration list for PBXNativeTarget "QuickTableViewUITests" */;
 			buildPhases = (
 				12B69BBD236246C2000C32EE /* Sources */,
 				12B69BBE236246C2000C32EE /* Frameworks */,
@@ -218,9 +218,9 @@
 			dependencies = (
 				12B69BC3236246C2000C32EE /* PBXTargetDependency */,
 			);
-			name = "Book ListUITests";
+			name = QuickTableViewUITests;
 			productName = "Book ListUITests";
-			productReference = 12B69BC1236246C2000C32EE /* Book ListUITests.xctest */;
+			productReference = 12B69BC1236246C2000C32EE /* QuickTableViewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -260,8 +260,8 @@
 			projectRoot = "";
 			targets = (
 				12B69B9F236246C0000C32EE /* QuickTableView */,
-				12B69BB5236246C2000C32EE /* Book ListTests */,
-				12B69BC0236246C2000C32EE /* Book ListUITests */,
+				12B69BB5236246C2000C32EE /* QuickTableViewTests */,
+				12B69BC0236246C2000C32EE /* QuickTableViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -615,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12B69BCD236246C2000C32EE /* Build configuration list for PBXNativeTarget "Book ListTests" */ = {
+		12B69BCD236246C2000C32EE /* Build configuration list for PBXNativeTarget "QuickTableViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12B69BCE236246C2000C32EE /* Debug */,
@@ -624,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12B69BD0236246C2000C32EE /* Build configuration list for PBXNativeTarget "Book ListUITests" */ = {
+		12B69BD0236246C2000C32EE /* Build configuration list for PBXNativeTarget "QuickTableViewUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12B69BD1236246C2000C32EE /* Debug */,
