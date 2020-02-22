@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1279A4952401B69800C8AC09 /* QTCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279A4942401B69800C8AC09 /* QTCViewModel.swift */; };
+		1279A4972401C3DE00C8AC09 /* QTVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279A4962401C3DE00C8AC09 /* QTVDataSource.swift */; };
+		1279A49A2401C43400C8AC09 /* QTVLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279A4992401C43400C8AC09 /* QTVLocalDataSource.swift */; };
+		1279A49C2401C49200C8AC09 /* QTVContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279A49B2401C49200C8AC09 /* QTVContainer.swift */; };
 		12B69BA4236246C0000C32EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA3236246C0000C32EE /* AppDelegate.swift */; };
 		12B69BA6236246C0000C32EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA5236246C0000C32EE /* SceneDelegate.swift */; };
 		12B69BA8236246C0000C32EE /* QuickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B69BA7236246C0000C32EE /* QuickTableViewController.swift */; };
@@ -38,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		1279A4942401B69800C8AC09 /* QTCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTCViewModel.swift; sourceTree = "<group>"; };
+		1279A4962401C3DE00C8AC09 /* QTVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTVDataSource.swift; sourceTree = "<group>"; };
+		1279A4992401C43400C8AC09 /* QTVLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTVLocalDataSource.swift; sourceTree = "<group>"; };
+		1279A49B2401C49200C8AC09 /* QTVContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTVContainer.swift; sourceTree = "<group>"; };
+		1279A4A02401C55300C8AC09 /* books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		12B69BA0236246C0000C32EE /* Book List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B69BA3236246C0000C32EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12B69BA5236246C0000C32EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +87,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1279A4982401C41700C8AC09 /* QTVDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1279A4962401C3DE00C8AC09 /* QTVDataSource.swift */,
+				1279A49E2401C53A00C8AC09 /* QTVLocalDataSource */,
+			);
+			path = QTVDataSource;
+			sourceTree = "<group>";
+		};
+		1279A49E2401C53A00C8AC09 /* QTVLocalDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1279A4992401C43400C8AC09 /* QTVLocalDataSource.swift */,
+				1279A49F2401C54C00C8AC09 /* Local Resources */,
+			);
+			path = QTVLocalDataSource;
+			sourceTree = "<group>";
+		};
+		1279A49F2401C54C00C8AC09 /* Local Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1279A4A02401C55300C8AC09 /* books.json */,
+			);
+			path = "Local Resources";
+			sourceTree = "<group>";
+		};
 		12B69B97236246C0000C32EE = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +140,13 @@
 				12B69BB1236246C2000C32EE /* Info.plist */,
 				12B69BA3236246C0000C32EE /* AppDelegate.swift */,
 				1279A4942401B69800C8AC09 /* QTCViewModel.swift */,
+				1279A49B2401C49200C8AC09 /* QTVContainer.swift */,
 				12B69BA7236246C0000C32EE /* QuickTableViewController.swift */,
 				12B69BA5236246C0000C32EE /* SceneDelegate.swift */,
 				12B69BAC236246C2000C32EE /* Assets.xcassets */,
 				12B69BAE236246C2000C32EE /* LaunchScreen.storyboard */,
 				12B69BA9236246C0000C32EE /* Main.storyboard */,
+				1279A4982401C41700C8AC09 /* QTVDataSource */,
 			);
 			path = "Book List";
 			sourceTree = "<group>";
@@ -267,9 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				12B69BA8236246C0000C32EE /* QuickTableViewController.swift in Sources */,
+				1279A49C2401C49200C8AC09 /* QTVContainer.swift in Sources */,
 				1279A4952401B69800C8AC09 /* QTCViewModel.swift in Sources */,
+				1279A49A2401C43400C8AC09 /* QTVLocalDataSource.swift in Sources */,
 				12B69BA4236246C0000C32EE /* AppDelegate.swift in Sources */,
 				12B69BA6236246C0000C32EE /* SceneDelegate.swift in Sources */,
+				1279A4972401C3DE00C8AC09 /* QTVDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

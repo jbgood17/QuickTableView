@@ -9,36 +9,33 @@
 import Foundation
 import UIKit
 
-struct Book: Codable {
+struct Book: QTVItem {
     var title: String
     var subtitle: String
 }
 
 class QTVViewModel {
-		
-	var books: [Book] = []
 	
-	func readFromBooksList(completion: @escaping ([Book]) -> ()) {
-		if let booksUrl = Bundle.main.url(forResource: "books", withExtension: "json") {
-			do {
-				let data = try Data(contentsOf: booksUrl, options: [])
-				let books = try JSONDecoder().decode([Book].self, from: data)
-				
-				self.books = books
-				
-				completion(books)
-			} catch {
-					
-			}
+	var items: [QTVItem] = []
+	let dataSource: QTVDataSource
+	
+	init(dataSource: QTVDataSource) {
+		self.dataSource = dataSource
+	}
+			
+	func fetchFromDataSource(completion: @escaping () -> ()) {
+		dataSource.fetchItems { (items) in
+			self.items = items
+			completion()
 		}
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return books.count
+		return items.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		guard indexPath.row < self.books.count else {
+		guard indexPath.row < self.items.count else {
 				return UITableViewCell(style: .subtitle, reuseIdentifier: QTCTableViewCellIdentifier)
 		}
 
@@ -49,9 +46,9 @@ class QTVViewModel {
 				cell = UITableViewCell(style: .subtitle, reuseIdentifier: QTCTableViewCellIdentifier)
 		}
 
-		let book = self.books[indexPath.row]
-		cell.textLabel?.text = book.title
-		cell.detailTextLabel?.text = book.subtitle
+		let item = self.items[indexPath.row]
+		cell.textLabel?.text = item.title
+		cell.detailTextLabel?.text = item.subtitle
 
 		return cell
 	}

@@ -22,9 +22,9 @@ class QuickTableViewController: UIViewController, UITableViewDelegate {
 		tableView.delegate = self
 		tableView.dataSource = self
 		
-		viewModel = QTVViewModel()
+		viewModel = QTVContainer.qtvViewModel()
 			
-		viewModel.readFromBooksList { [weak self] (books) in
+		viewModel.fetchFromDataSource { [weak self] in
 			guard let strongSelf = self else { return }
 			
 			DispatchQueue.main.async {
